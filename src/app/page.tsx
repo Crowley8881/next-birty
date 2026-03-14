@@ -90,7 +90,7 @@ export default function BirthdayCard() {
                 onClick={() => setIsOpen(true)}
                 className="cursor-pointer"
               >
-                <div className="relative w-full max-w-2xl mx-auto" style={{ height: '75vh' }}>
+                <div className="relative w-full max-w-2xl mx-auto" style={{ height: '90vh' }}>
                   {/* Card Shadow */}
                   <div className="absolute inset-0 bg-gradient-to-b from-black/5 to-black/20 rounded-3xl" />
 
