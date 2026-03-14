@@ -90,7 +90,7 @@ export default function BirthdayCard() {
                 onClick={() => setIsOpen(true)}
                 className="cursor-pointer"
               >
-                <div className="relative w-full aspect-[4/3] max-w-2xl mx-auto">
+                <div className="relative w-full max-w-2xl mx-auto" style={{ height: '75vh' }}>
                   {/* Card Shadow */}
                   <div className="absolute inset-0 bg-gradient-to-b from-black/5 to-black/20 rounded-3xl" />
 
@@ -182,7 +182,7 @@ export default function BirthdayCard() {
                     style={{ transformStyle: 'preserve-3d' }}
                   >
                     <div 
-                      className="relative w-full aspect-[4/3] rounded-3xl shadow-2xl border-4 border-white flex flex-col items-center justify-center p-8 overflow-hidden"
+                      className="relative w-full h-full rounded-3xl shadow-2xl border-4 border-white flex flex-col items-center justify-center p-8 overflow-hidden"
                       style={{
                         background: `linear-gradient(135deg, #C41E3A 0%, #9B4D96 50%, #1B1B3A 100%)`
                       }}
