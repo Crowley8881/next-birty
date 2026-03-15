@@ -197,13 +197,14 @@ export default function BirthdayCard() {
                         transition={{ duration: 0.5 }}
                         className="relative z-10 text-center flex flex-col items-center justify-center h-full gap-6"
                       >
-                        <motion.div
-                          className="text-7xl"
-                          animate={{ scale: [1, 1.2, 1], rotate: [0, 5, -5, 0] }}
-                          transition={{ duration: 2, repeat: Infinity }}
-                        >
-                          💝
-                        </motion.div>
+                        {/* Violet Flowers Image */}
+                        <motion.img
+                          src="/images/violet-flowers.png"
+                          alt="Buquê de violetas"
+                          className="w-32 h-32 object-contain"
+                          animate={{ scale: [1, 1.08, 1], rotate: [0, 3, -3, 0] }}
+                          transition={{ duration: 3, repeat: Infinity }}
+                        />
 
                         <h3 className="text-5xl font-bold text-white drop-shadow-lg">
                           Parabéns!
@@ -213,6 +214,15 @@ export default function BirthdayCard() {
                           Que seu dia seja tão especial quanto você é para todos nós! 
                           Que este ano traga muita alegria, sucesso e momentos inesquecíveis!
                         </p>
+
+                        {/* Typewriter Image at the bottom */}
+                        <motion.img
+                          src="/images/typewriter.png"
+                          alt="Máquina de escrever"
+                          className="w-24 h-24 object-contain mt-4"
+                          animate={{ y: [0, -5, 0] }}
+                          transition={{ duration: 2.5, repeat: Infinity }}
+                        />
                       </motion.div>
 
                       {/* Decorative corners */}
