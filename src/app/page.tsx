@@ -2,6 +2,12 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
+import { Great_Vibes } from 'next/font/google';
+
+const calligraphy = Great_Vibes({
+  weight: '400',
+  subsets: ['latin']
+});
 
 /**
  * Birthday Card Component - Violet Evergarden Edition
@@ -70,9 +76,6 @@ export default function BirthdayCard() {
                 >
                   Feliz Aniversário! 🎉
                 </h1>
-                <p className="text-lg font-light text-white/70">
-                  Toque no envelope para ler sua mensagem
-                </p>
               </div>
 
               <motion.div
@@ -141,12 +144,13 @@ export default function BirthdayCard() {
 
                   {/* Mensagem Principal */}
                   <div className="space-y-6 text-center z-10">
-                    <h3 className="text-5xl font-serif font-bold text-white tracking-wide">
-                      Parabéns!
-                    </h3>
+                   <h3 className={`${calligraphy.className} text-7xl text-white drop-shadow-lg`}>
+                    Parabéns!
+                  </h3>
                     <p className="text-xl text-pink-100/90 font-serif italic leading-relaxed">
-                      &quot;Que seu dia seja tão especial quanto você é para todos nós! 
-                      Que este ano traga muita alegria, sucesso e momentos inesquecíveis!&quot;
+                      &quot;Primavera, verão, outono, inverno... Muitas estações se passaram,
+                       e eu continuo esperando por você
+                      !&quot;
                     </p>
                   </div>
 
